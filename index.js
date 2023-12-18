@@ -418,7 +418,7 @@ function animateUrlWithEmojis () {
 
       for (i = 0; i < 10; i++) {
         m = Math.floor(e.length * ((Math.sin((Date.now() / 100) + i) + 1) / 2))
-        s += '👶' + e[m]
+        s += '👍' + e[m]
       }
 
       window.location.hash = s
@@ -697,8 +697,8 @@ function requestWebauthnAttestation () {
         // User:
         user: {
           id: new Uint8Array(16),
-          name: 'lolica@jaczup.me',
-          displayName: 'Ptoszek Jaczupa'
+          name: 'jebac@lebork.pl',
+          displayName: 'Chuj ci w dupe'
         },
 
         pubKeyCredParams: [{
