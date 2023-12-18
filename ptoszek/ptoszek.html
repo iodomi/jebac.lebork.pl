@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+  <title>Ptoszek</title>
+  <meta charset='UTF-8'>
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Inconsolata');
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      background-color: black;
+      font-family: 'Inconsolata', sans-serif;
+      overflow: hidden;
+    }
+    @keyframes blurslowly {
+      0% {
+        filter: none;
+      }
+      92% {
+        filter: blur(0);
+      }
+      96% {
+        filter: blur(1px);
+      }
+      100% {
+        filter: blur(0);
+      }
+    }
+
+    .cookie {
+      transition: all 0.35s;
+      font-size: 1rem;
+      background: #00ff00;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent;
+    }
+
+    body {
+      animation-name: blurslowly;
+      animation-iteration-count: infinite;
+      animation-duration: 15s;
+      animation-play-state: running;
+    }
+  </style>
+
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://jebac.lebork.pl/ptoszek"/>
+  <meta name="theme-color" content="#34eb7d">
+</head>
+<body>
+
+<noscript>WŁĄCZ JAVASCRIPTA DO KURWY NĘDZY</noscript>
+
+<!-- Dodaj komunikat o plikach cookies -->
+<div class="cookie">
+  Ta strona używa plików cookies. Jeśli wyrażasz zgodę na korzystanie z plików cookies naciśnij przycisk...
+</div>
+
+<script src='ptoszek.js'></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6S5388LRGM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6S5388LRGM');
+</script>
+
+</body>
+</html>

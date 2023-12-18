@@ -1,18 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata');
-
 body {
-    font-family: 'Inconsolata', sans-serif;
+    font-family: 'Consolas', sans-serif;
     background-color: #101010;
-    color: #00ff00;
+    color: #c2c2c2;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     position: relative;
+    overflow: hidden;
 }
 
 canvas {
+    display: block;
     position: fixed;
     top: 0;
     left: 0;
@@ -21,18 +22,53 @@ canvas {
     z-index: -1;
 }
 
+@media only screen and (max-width: 600px) {
+    body {
+      text-align: center;
+    }
+  
+    .main h1.title {
+      font-size: 2.5rem;
+    }
+  
+    .box {
+      max-width: 80%;
+    }
+  
+    .button-container {
+      flex-direction: row;
+      margin-top: 10px;
+    }
+  
+    .popup {
+      width: 90%;
+    }
+  
+    .button {
+      width: 100%;
+    }
+  
+    body::after {
+      height: 20px;
+    }
+  
+    #footer {
+      font-size: 12px;
+    }
+  }
+  
 .main{
     display: grid;
     align-items: center;
     justify-content: center;
     text-align: center;
-}
+}  
 
 .main h1.title{
     transition: all 0.35s;
-    text-shadow: 0 0 5px #45a049;
+    text-shadow: 0 0 5px #00A3DE;
     font-size: 4.0rem;
-    background: #00ff00;
+    background: #62CAEF;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -41,10 +77,10 @@ canvas {
 }
 
 .main h1.title:hover {
-    text-shadow: 0 0 10px #45a049;
+    text-shadow: 0 0 10px #00A3DE;
     transition: all 0.3s ease;
     text-align: center;
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 
 .box {
@@ -52,10 +88,28 @@ canvas {
     background-color: #111111;
     border-radius: 13px;
     padding: 10px 0px;
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.9);
     max-width: 450px;
     width: 100%;
+    margin: auto;
     backdrop-filter: blur(15px);
+}
+
+.disco {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.1s ease;
+    background-color: #00000000;
+    border: none;
+}
+
+.disco:active {
+    transform: scale(1.5);
 }
 
 .info {
@@ -77,23 +131,55 @@ canvas {
   margin-top: 20px;
 }
 
+.popup {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: fit-content;
+    padding: 20px;
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    border-radius: 15px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: center;
+    backdrop-filter: blur(10px);
+  }
+
 .button {
     width: 80%;
     padding: 10px;
     margin: 8px;
-    background-color: #00ff00;
+    background-color: #c2c2c2;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    box-shadow: 0px 0px 5px #c2c2c2;
     color: #fff;
     border-radius: 12px;
     cursor: pointer;
     text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.2s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
   }
   
-  .button:hover {
-    background-color: #45a049;
-    color: #fff;
-    transform: scale(1.05);
+.button:hover {
+    -webkit-background-clip: border-box;
+    -moz-background-clip: border-box;
+    -webkit-text-fill-color: #fff;
+    -moz-text-fill-color: #fff;
+    background: #62CAEF;
+    box-shadow: 0px 0px 5px #00A3DE;
+    transform: scale(1.1);
   }
+
+.button:active {
+    transform: scale(0.7);
+}
 
 body::after {
     content: '';
@@ -105,9 +191,10 @@ body::after {
     color: inherit;
     text-decoration: none;
     position: fixed;
+    cursor: default;
     bottom: 0;
     width: 100%;
-    height: 18px;
+    height: 22px;
     text-align: center;
     background-color: #090909;
     z-index: 999;
