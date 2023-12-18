@@ -1,6 +1,5 @@
-# jebac.lebork.pl
-Hej miło mi że tu jesteś
+[Discord]: https://github.com/Iodomi/jebac.lebork.pl/blob/main/discord.html
 
-Pewnie zastanawiasz się czym jest ta strona?
+[Ptoszek]: https://github.com/Iodomi/jebac.lebork.pl/blob/main/ptoszek.html
 
-Jest to moje małe community oraz strona do różnego rodzaju testów
+[Github]: https://github.com/Iodomi/jebac.lebork.pl
