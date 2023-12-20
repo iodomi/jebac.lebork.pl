@@ -72,7 +72,6 @@ const VIDEOS = [
   'assets/videos/duck.mp4',
   'assets/videos/szybkakaczka.mp4',
   'assets/videos/video-1659291565.mp4',
-  'assets/videos/ZAMKNIJ MORDE.mov'
 ]
 
 const FILE_DOWNLOADS = [

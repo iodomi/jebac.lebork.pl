@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/style.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 
@@ -35,18 +35,18 @@
     window.onload = function() {document.body.style.opacity = "1";};
   </script>
 
-<script>
-  let clickCount = 0;
+  <script>
+    let clickCount = 0;
 
-  function handleClick() {
-      clickCount++;
+    function handleClick() {
+        clickCount++;
 
-      if (clickCount === 3) {
-          window.location.href = "/console.html";
-      }
-  }
+        if (clickCount === 3) {
+            window.location.href = "/console.html";
+        }
+    }
   </script>
 
-  <a href="https://github.com/Iodomi" id="footer">Copyright © 2023 Lodomi. Wszelkie prawa zastrzeżone.</a>
+  <a id="footer">Copyright © 2023 Lodomi. Wszelkie prawa zastrzeżone.</a>
 </body>
 </html>
