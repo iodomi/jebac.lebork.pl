@@ -24,6 +24,10 @@ function handleCommand() {
         case 'hello':
             hello();
             break;
+        
+        case 'exit':
+            exit();
+            break;
 
         case 'help':
             help();
@@ -40,10 +44,15 @@ function help() {
     const helpMessage = `
 These shell commands are defined internally. Type 'help' to see this list.
 
-help 
-hello
+help - Command list
+hello - Returns a test message to the console
+exit - Back to the front page
     `;
     displayResult(helpMessage);
+}
+
+function exit() {
+    window.location.replace("https://jebac.lebork.pl");
 }
 
 function hello() {
