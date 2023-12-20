@@ -16,7 +16,7 @@
   <div class="main">
     <div class="main_content">
       <button class="disco" onclick="disco()">🎉</button>
-      <h1 class="title"><b>jebac.lebork.pl</b></h1>
+      <h1 class="title" onclick="handleClick()"><b>jebac.lebork.pl</b></h1>
       <div class="box">
         <div class="info">
           <h2>Strona jest podczas konstrukcji</h2>
@@ -31,8 +31,22 @@
   </div>
 
   <script src="scripts/shader.js"></script>
-  
+  <script>
+    window.onload = function() {document.body.style.opacity = "1";};
+  </script>
+
+<script>
+  let clickCount = 0;
+
+  function handleClick() {
+      clickCount++;
+
+      if (clickCount === 3) {
+          window.location.href = "/console.html";
+      }
+  }
+  </script>
+
   <a href="https://github.com/Iodomi" id="footer">Copyright © 2023 Lodomi. Wszelkie prawa zastrzeżone.</a>
 </body>
-
 </html>

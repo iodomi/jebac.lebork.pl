@@ -1,4 +1,6 @@
 body {
+    opacity: 0;
+    transition: opacity 0.5s;
     font-family: 'Consolas', sans-serif;
     background-color: #101010;
     color: #c2c2c2;

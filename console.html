@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: "Courier New", monospace;
+            font-size: 1rem;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .terminal {
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #output {
+            white-space: pre-wrap;
+            margin: 0;
+            padding: 10px;
+            background-color: black;
+        }
+
+        #input {
+            opacity: 0;
+            background-color: black;
+            color: white;
+            font-family: "Courier New", monospace;
+            font-size: 1rem;
+            border: none;
+            outline: none;
+            margin: 0;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <div id="output">Yebac bash, version 1.0-release (x86_64-pc-webbrowser)<br><br>jebac@lebork:~$ </div>
+        <input type="text" id="input" autofocus autocomplete="off">
+    </div>
+
+    <script src="scripts/terminal.js"></script>
+</body>
+</html>
