@@ -26,8 +26,12 @@
       precision mediump float;
       uniform float u_time;
       void main() {
-        // Zmniejszenie jasności koloru
-        gl_FragColor = vec4(sin(u_time) * 0.5, cos(u_time) * 0.5, 0.25, 1.0);
+        vec2 st = gl_FragCoord.xy / vec2(800.0, 600.0);
+        vec3 color = vec3(0.0);
+        color.r = 0.5 + 0.5 * sin(u_time);
+        color.g = 0.5 + 0.5 * sin(u_time + 2.0 * 3.14159 / 3.0);
+        color.b = 0.5 + 0.5 * sin(u_time + 4.0 * 3.14159 / 3.0);
+        gl_FragColor = vec4(color, 1.0);
       }
     `;
     
