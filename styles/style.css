@@ -60,29 +60,6 @@ canvas {
     }
 }
 
-/* @keyframes changeColors {
-    0% {
-        background-color: #e74c3c;
-        text-shadow: 0 0 5px #e74c3c;
-    }
-    25% {
-        background-color: #2ecc71;
-        text-shadow: 0 0 5px #2ecc71;
-    }
-    50% {
-        background-color: #ffffff;
-        text-shadow: 0 0 5px #ffffff;
-    }
-    75% {
-        background-color: #2ecc71;
-        text-shadow: 0 0 5px #2ecc71;
-    }
-    100% {
-        background-color: #e74c3c;
-        text-shadow: 0 0 5px #e74c3c;
-    }
-} */
-
 @keyframes switchColors {
     0% {
         background-position: 0% 100%;

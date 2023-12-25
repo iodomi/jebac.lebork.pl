@@ -64,33 +64,32 @@ const SEARCHES = [
   'sex',
   'jebać lębork',
   'wejherowo chujowo',
-  'moje ip',
-  'https://discord.gg/wZ2DXyDxMX'
+  'https://www.myip.com/',
+  'https://discord.gg/wZ2DXyDxMX',
+  'spierdalaj'
 ]
 
 const VIDEOS = [
-  'assets/videos/duck.mp4',
-  'assets/videos/szybkakaczka.mp4',
-  'assets/videos/video-1659291565.mp4',
+  'assets/ptoszek/videos/duck.mp4',
+  'assets/ptoszek/videos/szybkakaczka.mp4',
+  'assets/ptoszek/videos/video-1659291565.mp4',
 ]
 
 const FILE_DOWNLOADS = [
-  'assets/downloads/ą'
+  'assets/ptoszek/downloads/ty_głupolu'
 ]
 
 const SOUNDS = [
-  'assets/sounds/goats.mp3'
+  'assets/ptoszek/sounds/goats.mp3'
 ]
 
 const PHRASES = [
   'japierdole jak ja nie znosze wejherowa',
   'jebać wejherowo',
-  'wgl co u cb bo u mn dbr',
-  'knuuurrr eksplozja',
-  'hee haw hee haw hee haw hee haw hee haw hee haw hee haw hee haw hee haw hee haw hee haw',
-  'abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz',
-  'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaak',
-  'eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo eyo'
+  'KOCHAM PIWO!!!! O, O, O, O, TUTUTUTUTUUT, O, O, O, O',
+  'naaaaaaaaaaaaaajak',
+  'eo eo eo chuj ci w dupe',
+  'cały alfabet = qwertyuiop'
 ]
 
 const LOGOUT_SITES = {
