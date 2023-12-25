@@ -2,7 +2,7 @@ body {
     opacity: 0;
     transition: opacity 0.5s;
     font-family: 'Consolas', sans-serif;
-    background-color: #101010;
+    background-color: #080808;
     color: #c2c2c2;
     display: flex;
     flex-direction: column;
@@ -12,6 +12,11 @@ body {
     margin: 0;
     position: relative;
     overflow: hidden;
+}
+  
+#changingText {
+    content: "|";
+    display: inline-block;
 }
 
 canvas {
@@ -23,7 +28,7 @@ canvas {
     height: 100%;
     z-index: -1;
 }
-  
+
 .main{
     display: grid;
     align-items: center;
@@ -31,31 +36,111 @@ canvas {
     text-align: center;
 }  
 
-.main h1.title{
+.snow-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+  
+.snowflake {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: snowfall linear infinite;
+}
+  
+@keyframes snowfall {
+    to {
+      transform: translateY(97vh);
+    }
+}
+
+/* @keyframes changeColors {
+    0% {
+        background-color: #e74c3c;
+        text-shadow: 0 0 5px #e74c3c;
+    }
+    25% {
+        background-color: #2ecc71;
+        text-shadow: 0 0 5px #2ecc71;
+    }
+    50% {
+        background-color: #ffffff;
+        text-shadow: 0 0 5px #ffffff;
+    }
+    75% {
+        background-color: #2ecc71;
+        text-shadow: 0 0 5px #2ecc71;
+    }
+    100% {
+        background-color: #e74c3c;
+        text-shadow: 0 0 5px #e74c3c;
+    }
+} */
+
+@keyframes switchColors {
+    0% {
+        background-position: 0% 100%;
+        color: #e74c3c;
+        text-shadow: 0 0 5px #e74c3c;
+    }
+    25% {
+        background-position: 25% 0%;
+        color: #2ecc71;
+        text-shadow: 0 0 5px #2ecc71;
+    }
+    50% {
+        background-position: 50% 100%;
+        color: #ffffff;
+        text-shadow: 0 0 5px #ffffff;
+    }
+    75% {
+        background-position: 75% 0%;
+        color: #2ecc71;
+        text-shadow: 0 0 5px #2ecc71;
+    }
+    100% {
+        background-position: 100% 100%;
+        color: #e74c3c;
+        text-shadow: 0 0 5px #e74c3c;
+    }
+}
+
+@keyframes colorShiftUp {
+    0%, 100% {
+        background-position: 0% 100%;
+    }
+    50% {
+        background-position: 0% 10%;
+    }
+}
+
+.main h1.title {
     transition: all 0.35s;
-    text-shadow: 0 0 5px #00A3DE;
     font-size: 4rem;
-    background: #62CAEF;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    animation: switchColors 5s infinite, colorShiftUp 5s infinite;
     text-align: center;
 }
 
 .main h1.title:hover {
-    text-shadow: 0 0 10px #00A3DE;
+    animation: switchColors 5s infinite, colorShiftUp 5s infinite;
     transition: all 0.3s ease;
     text-align: center;
     transform: scale(1.15);
 }
 
 .main h1.title:active {
-    text-shadow: 0 0 10px #00A3DE;
+    animation: switchColors 5s infinite, colorShiftUp 5s infinite;
     transition: all 0.3s ease;
     text-align: center;
     transform: scale(0.85);
 }
+
 
 .box {
     position: relative;
@@ -88,6 +173,7 @@ canvas {
 }
 
 .info {
+    overflow: hidden;
     text-align: center;
 }
 
@@ -141,14 +227,28 @@ canvas {
     position: relative;
     overflow: hidden;
   }
-  
+
+  @keyframes switchColorsNW {
+    0% {
+        background: #e74c3c;
+        text-shadow: 0 0 5px #e74c3c;
+    }
+    50% {
+        background: #2ecc71;
+        text-shadow: 0 0 5px #2ecc71;
+    }
+    100% {
+        background: #e74c3c;
+        text-shadow: 0 0 5px #e74c3c;
+    }
+}
+
 .button:hover {
     -webkit-background-clip: border-box;
     -moz-background-clip: border-box;
     -webkit-text-fill-color: #fff;
     -moz-text-fill-color: #fff;
-    background: #62CAEF;
-    box-shadow: 0px 0px 5px #00A3DE;
+    animation: switchColorsNW 5s infinite, colorShiftUp 5s infinite;
     transform: scale(1.1);
   }
 
