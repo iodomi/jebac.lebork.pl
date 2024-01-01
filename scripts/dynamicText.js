@@ -1,25 +1,20 @@
 const changingText = document.getElementById('changingText');
 const texts = [
-'Zdrowych i wesołych świąt',
-'Szczęśliwego nowego roku'
-
-// Mały prequel hehe
-
-// 'Pracujemy nad tym...', 
-// 'Już niedługo... (chyba)', 
-// 'Strona czeka, nie ty :P', 
-// 'Do cierpliwych świat należy ;)',
-// 'Prace wykończeniowe trwają...',
-// 'Może odwiedź naszego discorda?',
-// 'Nie rozumiem czemu to czytasz.',
-// 'Może idź poczytaj sobie książkę?',
-// 'Albo chociaż trawy dotknij :(',
-// 'Zaczynam się o ciebie martwić',
-// 'Weź ty może od komputera odejdź',
-// 'Myślę że detox by ci się przydał',
-// 'Czytanie tego jest takie ciekawe?',
-// 'Albo wiesz co, dam ci spokój,',
-// 'Nie chce mi się tego dalej pisać',
+'Pracujemy nad tym...', 
+'Już niedługo... (chyba)',
+'Strona czeka, nie ty :P', 
+'Do cierpliwych świat należy ;)',
+'Prace wykończeniowe trwają...',
+'Lepiej zaparz sobie kawę :3',
+'Może odwiedź naszego discorda?',
+'Nie rozumiem czemu to czytasz.',
+'Może idź poczytaj sobie książkę?',
+'Albo chociaż trawy dotknij :(',
+'Zaczynam się o ciebie martwić',
+'Weź ty może od komputera odejdź',
+'Myślę że detox by ci się przydał',
+'Czytanie tego jest takie ciekawe?',
+'Albo wiesz co, dam ci spokój.',
 ];
 let index = 0;
 
