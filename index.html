@@ -6,41 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home</title>
   <link rel="stylesheet" href="styles/style.css">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <canvas id="canvas"></canvas>
   <canvas id="webgl-canvas"></canvas>
-  
+
   <div class="main">
     <div class="main_content">
       <div class="snow-container"></div>
 
-      <button class="disco" onclick="disco()">🎉</button>
+      <!-- <button class="disco" onclick="disco()">🎉</button> -->
     
-      <h1 class="title" onclick="handleClick()"><b>jebac.lebork.pl</b></h1>
+      <h1 class="title"><b>mc.jebac.lebork.pl</b></h1>
 
       <div class="box">
         <div class="info">
-          <h2 id="changingText">Strona podczas konstrukcji</h2>
+          <h2 id="changingText">Geopolityczny serwer minecraft</h2>
         </div>
 
         <div class="button-container">
-          <a href="/hejka.html" class="button">Hejka</a>
           <a href="/discord.html" class="button">Discord</a>
-          <a href="https://github.com/Iodomi/jebac.lebork.pl" class="button">Github</a>
+          <a href="http://mc.jebac.lebork.pl:2137/" class="button">Mapa serwera</a>
         </div>
-        
       </div>
     </div>
   </div>
-  
-  <script src="scripts/shader.js"></script>
-  <script src="scripts/snowflakes.js"></script>
-  <script src="scripts/dynamicText.js"></script>
-  <script src="scripts/secret.js"></script>
-  <script src="scripts/fade.js"></script>
 
   <a id="footer">Copyright © 2023-2024 Lodomi. Wszelkie prawa zastrzeżone.</a>
 </body>
