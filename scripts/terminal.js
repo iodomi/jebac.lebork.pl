@@ -21,7 +21,7 @@ function handleCommand() {
     input.value = '';
 
     switch (command) {
-        case 'hello':
+        case 'msg':
             hello();
             break;
         
@@ -45,7 +45,7 @@ function help() {
 These shell commands are defined internally. Type 'help' to see this list.
 
 help - Command list
-hello - Returns a test message to the console
+msg - Returns a test message to the console
 exit - Back to the front page
     `;
     displayResult(helpMessage);
