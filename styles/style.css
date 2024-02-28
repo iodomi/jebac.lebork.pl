@@ -1,6 +1,6 @@
 body {
     font-family: 'Quicksand', sans-serif;
-    background-image: url(../assets/bg.png);
+    background-color: rgb(30, 30, 30);
     color: #d7d7d7;
     display: flex;
     flex-direction: column;
@@ -60,18 +60,16 @@ canvas {
 
 .main h1.title {
     transition: all 0.35s;
-    font-size: 4rem;
-    color: #eeeeee;
-    text-shadow: 0 0 5px #a3a3a3;
+    font-size: 5rem;
+    color: #ff4b4b;
+    text-shadow: 0 0 10px #ff0000;
     text-align: center;
 }
 
 .main h1.title:hover {
-    color: #ffffff;
-    text-shadow: 0 0 5px #ffffff;
     transition: all 0.3s ease;
     text-align: center;
-    transform: scale(1.20);
+    transform: scale(1.25);
 }
 
 /* .main h1.title:active {
@@ -92,10 +90,10 @@ canvas {
     width: 100%;
     margin: auto;
     padding-bottom: 20px;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(3px);
 }
 
-/* .disco {
+.disco {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -110,7 +108,7 @@ canvas {
 
 .disco:active {
     transform: scale(1.5);
-} */
+}
 
 .info {
     overflow: hidden;
@@ -153,14 +151,14 @@ canvas {
     width: 80%;
     padding: 10px;
     margin: 8px;
-    background-color: #c2c2c2;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    box-shadow: 0px 0px 5px #c2c2c2;
-    color: #fff;
-    border-radius: 12px;
+    background-color: #ffffff9c;
+    -webkit-background-clip: border-box;
+    -moz-background-clip: border-box;
+    -webkit-text-fill-color: #ffffff9c;
+    -moz-text-fill-color: #ffffff9c;
+    background: #ff4b4b;
+    box-shadow: 0px 0px 5px #ff0000;
+    border-radius: 15px;
     cursor: pointer;
     text-decoration: none;
     transition: background-color 0.2s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
@@ -171,11 +169,11 @@ canvas {
 .button:hover {
     -webkit-background-clip: border-box;
     -moz-background-clip: border-box;
-    -webkit-text-fill-color: #fff;
-    -moz-text-fill-color: #fff;
-    background: #c2c2c2;
-    box-shadow: 0px 0px 5px #d7d7d7;
-    transform: scale(1.1);
+    -webkit-text-fill-color: #ffffff9c;
+    -moz-text-fill-color: #ffffff9c;
+    background: #ff4b4b;
+    box-shadow: 0px 0px 5px #ff0000;
+    transform: scale(1.15);
   }
 
 
@@ -205,14 +203,11 @@ body::after {
 
 @media only screen and (max-width: 768px) {
   .main h1.title {
-      font-size: 2.4rem;
+      font-size: 3.3rem;
   }
 
   .info{
     font-size: 14px;
-  }
-
-  .box {
   }
 
   .popup {
