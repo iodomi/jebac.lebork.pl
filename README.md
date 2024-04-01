@@ -1,4 +1,4 @@
-# Copyright © 2023-2024 Lodomi. Wszelkie prawa zastrzeżone.
+# Copyright © 2023-2024 iodomi. Wszelkie prawa zastrzeżone.
 
 Niniejsza strona internetowa, jebac.lebork.pl, jest objęta ochroną praw autorskich. Zawartość tej strony, włączając w to teksty, grafiki, multimedia oraz inne materiały, jest własnością moją lub została użyta na podstawie odpowiednich licencji.
 
